@@ -1,6 +1,6 @@
 <?php declare(strict_types = 1);
 
-namespace Simple\To\Implement\DependencyInjection;
+namespace SimpleToImplement\DependencyInjection;
 
 use Symfony\Component\Config\Definition\ConfigurationInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;

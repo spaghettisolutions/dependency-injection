@@ -1,8 +1,8 @@
 <?php declare(strict_types = 1);
 
-namespace Simple\To\Implement\DependencyInjection\Traits;
+namespace SimpleToImplement\DependencyInjection\Traits;
 
-use Simple\To\Implement\DependencyInjection\Functions;
+use SimpleToImplement\DependencyInjection\Functions;
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\Processor;

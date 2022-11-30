@@ -1,9 +1,9 @@
 <?php declare(strict_types = 1);
 
-namespace Simple\To\Implement\DependencyInjection\Traits;
+namespace SimpleToImplement\DependencyInjection\Traits;
 
-use Simple\To\Implement\DependencyInjection\Dependency;
-use Simple\To\Implement\DependencyInjection\Functions;
+use SimpleToImplement\DependencyInjection\Dependency;
+use SimpleToImplement\DependencyInjection\Functions;
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;

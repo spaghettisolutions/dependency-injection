@@ -1,6 +1,6 @@
 <?php declare(strict_types = 1);
 
-namespace Simple\To\Implement\DependencyInjection;
+namespace SimpleToImplement\DependencyInjection;
 
 use function array_map;
 use function class_exists;
