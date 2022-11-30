@@ -10,9 +10,9 @@ use function interface_exists;
 use function is_array;
 use function is_dir;
 use function ltrim;
-
 use function rmdir;
 use function unlink;
+
 use const GLOB_NOSORT;
 use const PHP_INT_MAX;
 

@@ -2,11 +2,11 @@
 
 namespace Simple\To\Implement\DependencyInjection\Traits;
 
+use Simple\To\Implement\DependencyInjection\Functions;
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\Processor;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
-use Simple\To\Implement\DependencyInjection\Functions;
 
 use function sprintf;
 

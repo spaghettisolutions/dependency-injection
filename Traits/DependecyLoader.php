@@ -2,11 +2,11 @@
 
 namespace Simple\To\Implement\DependencyInjection\Traits;
 
+use Simple\To\Implement\DependencyInjection\Dependency;
+use Simple\To\Implement\DependencyInjection\Functions;
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
-use Simple\To\Implement\DependencyInjection\Dependency;
-use Simple\To\Implement\DependencyInjection\Functions;
 
 trait DependecyLoader
 {
