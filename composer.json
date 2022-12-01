@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "SimpleToImplement\\DependencyInjection\\": ""
+            "SimpleToImplement\\": ""
         }
     },
     "minimum-stability": "dev",

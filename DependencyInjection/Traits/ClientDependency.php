@@ -2,7 +2,7 @@
 
 namespace SimpleToImplement\DependencyInjection\Traits;
 
-use SimpleToImplement\DependencyInjection\Functions;
+use SimpleToImplement\DependencyInjectionFunctions;
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\Processor;
@@ -24,7 +24,7 @@ trait ClientDependency
                 $this->buildClientConfiguration(arrayNodeDefinition: $tree->getRootNode());
                 $config = (new Processor())->process(configTree: $tree->buildTree(), configs: [$clientConfig]);
 
-                foreach ((new Functions())->makeOneDimension(array: $config, base: $clientKey = $clients . '.' . $key) as $tkey => $value) {
+                foreach ((new DependencyInjectionFunctions())->makeOneDimension(array: $config, base: $clientKey = $clients . '.' . $key) as $tkey => $value) {
                     $container->setParameter(name: $tkey, value: $value);
                 }
 

@@ -1,6 +1,6 @@
 <?php declare(strict_types = 1);
 
-namespace SimpleToImplement\DependencyInjection;
+namespace SimpleToImplement;
 
 use function array_map;
 use function class_exists;
@@ -16,7 +16,7 @@ use function unlink;
 use const GLOB_NOSORT;
 use const PHP_INT_MAX;
 
-final class Functions
+final class DependencyInjectionFunctions
 {
     public function isAssociative(mixed $array): bool
     {

@@ -3,7 +3,7 @@
 namespace SimpleToImplement\DependencyInjection\Traits;
 
 use SimpleToImplement\DependencyInjection\Dependency;
-use SimpleToImplement\DependencyInjection\Functions;
+use SimpleToImplement\DependencyInjectionFunctions;
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -26,6 +26,6 @@ trait DependecyLoader
 
     protected function checkImplementation(string $class): bool
     {
-        return (new Functions())->classImplements(class: $class, interface: Dependency::class);
+        return (new DependencyInjectionFunctions())->classImplements(class: $class, interface: Dependency::class);
     }
 }
