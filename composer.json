@@ -1,5 +1,5 @@
 {
-    "name": "simpletoimplement/dependency-injection",
+    "name": "spaghetti/dependency-injection",
     "description": "TODO",
     "type": "library",
     "keywords": [
@@ -11,17 +11,17 @@
     "license": "MIT",
     "require": {
         "php": ">=8.1.0",
-        "jetbrains/phpstorm-attributes": "*",
         "symfony/config": "^6.1|^6.2|^6.3",
         "symfony/dependency-injection": "^6.1|^6.2|^6.3",
         "symfony/http-kernel": "^6.1|^6.2|^6.3"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "*"
+        "friendsofphp/php-cs-fixer": "*",
+        "spaghetti/php-cs-fixer-config": "*"
     },
     "autoload": {
         "psr-4": {
-            "SimpleToImplement\\": ""
+            "Spaghetti\\": ""
         }
     },
     "minimum-stability": "dev",
@@ -34,8 +34,8 @@
             "dev-master": "1.x-dev"
         },
         "thanks": {
-            "name": "simpletoimplement/dependency-injection",
-            "url": "https://github.com/simpletoimplement/dependency-injection"
+            "name": "spaghetti/dependency-injection",
+            "url": "https://github.com/spaghettisolutions/dependency-injection"
         }
     }
 }

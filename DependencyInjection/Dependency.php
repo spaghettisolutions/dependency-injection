@@ -1,6 +1,6 @@
 <?php declare(strict_types = 1);
 
-namespace SimpleToImplement\DependencyInjection;
+namespace Spaghetti\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

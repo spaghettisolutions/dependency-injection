@@ -1,8 +1,8 @@
 <?php declare(strict_types = 1);
 
-namespace SimpleToImplement\DependencyInjection;
+namespace Spaghetti\DependencyInjection;
 
-use SimpleToImplement\DependencyInjectionFunctions;
+use Spaghetti\DependencyInjectionFunctions;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;

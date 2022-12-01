@@ -8,7 +8,7 @@ Installation
 The recommended way to install is via Composer:
 
 ```
-composer require simpletoimplement/dependency-injection
+composer require spaghetti/dependency-injection
 ```
 
 This package requires at least PHP version 8.1 and Symfony version 6.1

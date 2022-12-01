@@ -1,6 +1,6 @@
 <?php declare(strict_types = 1);
 
-namespace SimpleToImplement;
+namespace Spaghetti;
 
 use function array_map;
 use function class_exists;
