@@ -2,8 +2,8 @@
 
 namespace Spaghetti\DependencyInjection\Traits;
 
+use Spaghetti\ClassFunctions;
 use Spaghetti\DependencyInjection\Dependency;
-use Spaghetti\DependencyInjectionFunctions;
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -26,6 +26,6 @@ trait DependecyLoader
 
     protected function checkImplementation(string $class): bool
     {
-        return (new DependencyInjectionFunctions())->classImplements(class: $class, interface: Dependency::class);
+        return (new ClassFunctions())->classImplements(class: $class, interface: Dependency::class);
     }
 }
