@@ -7,7 +7,7 @@ Installation
 
 The recommended way to install is via Composer:
 
-```
+```shell
 composer require spaghetti/dependency-injection
 ```
 
