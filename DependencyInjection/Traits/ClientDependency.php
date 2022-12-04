@@ -2,11 +2,11 @@
 
 namespace Spaghetti\DependencyInjection\Traits;
 
-use Spaghetti\ArrayFunctions;
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\Processor;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Vairogs\Functions\Iteration;
 
 use function sprintf;
 
@@ -24,7 +24,7 @@ trait ClientDependency
                 $this->buildClientConfiguration(arrayNodeDefinition: $tree->getRootNode());
                 $config = (new Processor())->process(configTree: $tree->buildTree(), configs: [$clientConfig]);
 
-                foreach ((new ArrayFunctions())->makeOneDimension(array: $config, base: $clientKey = $clients . '.' . $key) as $tkey => $value) {
+                foreach ((new Iteration())->makeOneDimension(array: $config, base: $clientKey = $clients . '.' . $key) as $tkey => $value) {
                     $container->setParameter(name: $tkey, value: $value);
                 }
 

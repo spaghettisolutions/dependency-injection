@@ -2,10 +2,10 @@
 
 namespace Spaghetti\DependencyInjection;
 
-use Spaghetti\ArrayFunctions;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
+use Vairogs\Functions\Iteration;
 
 abstract class AbstractExtension extends Extension
 {
@@ -20,7 +20,7 @@ abstract class AbstractExtension extends Extension
 
     public function process(array $configs, ContainerBuilder $container, ConfigurationInterface $configuration): void
     {
-        foreach ((new ArrayFunctions())->makeOneDimension(array: [$this->getAlias() => $this->processConfiguration(configuration: $configuration, configs: $configs)]) as $key => $value) {
+        foreach ((new Iteration())->makeOneDimension(array: [$this->getAlias() => $this->processConfiguration(configuration: $configuration, configs: $configs)]) as $key => $value) {
             $container->setParameter(name: $key, value: $value);
         }
     }
